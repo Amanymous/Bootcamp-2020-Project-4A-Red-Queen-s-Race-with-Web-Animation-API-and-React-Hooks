@@ -8,9 +8,11 @@ import plant2 from './images/plant2.png';
 import plant3 from './images/plant3.png';
 
 function App() {
-  const [background1, background2, foreground1, foreground2] = useRef(null);
+  const background1 = useRef(null);
+  const background2 = useRef(null);
+  const foreground1 = useRef(null);
+  const foreground2 = useRef(null);
   const redQueen_alice_sprite = useRef(null);
-
   useLayoutEffect(() => {
     /* Background animations */
     let sceneryFrames = [
